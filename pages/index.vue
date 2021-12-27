@@ -1,9 +1,5 @@
 <template>
-  <Tutorial />
+  <div>Home</div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
-</script>
+<script lang="ts" src="./index.ts"></script>
