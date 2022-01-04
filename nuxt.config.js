@@ -1,6 +1,7 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  ssr: true,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -17,7 +18,12 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/styles/site.scss"],
+  css: ['@/assets/styles/site.scss'],
+
+  // Global variables import
+  styleResources: {
+    scss: ['@/assets/styles/vars.scss']
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -30,14 +36,29 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    'nuxt-font-loader',
+    '@nuxtjs/style-resources',
+    [
+      '@nuxt/image',
+      {
+        provider: 'static'
+      }
+    ]
   ],
+
+  // Custom font loader
+  fontLoader: {
+    url: 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap',
+    prefetch: true,
+    preconnect: true
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    '@nuxtjs/pwa'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -57,6 +78,6 @@ export default {
   // Router
   router: {
     base: '/',
-    mode: 'history',
+    mode: 'history'
   }
 }
