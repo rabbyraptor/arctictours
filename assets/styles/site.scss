@@ -1,7 +1,30 @@
 // Bootstrap Grid
 @import "~bootstrap/scss/bootstrap-grid.scss";
+@import "~/assets/styles/helping-classes.scss";
 
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.cta-button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: $font-weight-black;
+}
+
+main {
+  padding-top: 7rem;
 }
