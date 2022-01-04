@@ -1,10 +1,14 @@
 header {
-  height: 70px;
-  background-color: #ea6f6f;
+  height: 7rem;
+  background-color: $color-red;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+
   .logo {
     height: 40px;
-    width: 150px;
-    margin-top: 15px;
-    background-color: white;
+    color: $color-white;
+    font-size: 3rem;
+    font-weight: $font-weight-bold;
   }
 }
