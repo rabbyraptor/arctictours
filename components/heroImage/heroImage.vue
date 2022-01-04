@@ -1,7 +1,12 @@
 <template>
-  <div class="container hero">
+  <div class="container">
     <div class="row">
-      <div class="col-6">Hero IMAGE</div>
+      <div :style="'background-image: url(' + data.image + ')'" class="hero">
+        <h1 class="col-lg-10 offset-lg-1 hero__text" v-html="data.text" />
+        <div class="hero__cta">
+          <CtaButton :data="data.cta" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
