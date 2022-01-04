@@ -3,12 +3,6 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  transition: all 1.5s;
-
-  &:hover {
-    transform: scale(1.04);
-    z-index: 1;
-  }
 
   &__text {
     margin-top: 4rem;

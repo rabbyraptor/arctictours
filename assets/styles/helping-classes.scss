@@ -3,13 +3,7 @@
   background-image: url("/images/ice-sheet/ice-sheet-1.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: all 1.5s;
   cursor: default;
-
-  &:hover {
-    transform: scale(1.04);
-    z-index: 1;
-  }
 
   h2 {
     color: $color-icesheet-blue;
