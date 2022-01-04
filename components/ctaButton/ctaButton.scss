@@ -1,0 +1,16 @@
+.cta-button {
+  padding: 0.8rem 5rem;
+  font-size: 2.4rem;
+  border: 2px solid $color-white;
+  color: $color-white;
+  background-color: $color-yellow;
+  font-family: "Roboto", sans-serif;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translateX(-1px) translateY(-1px);
+    box-shadow: 2px 2px 2px rgba($color-black, 0.1);
+  }
+}
