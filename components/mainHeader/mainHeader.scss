@@ -11,4 +11,19 @@ header {
     font-size: 3rem;
     font-weight: $font-weight-bold;
   }
+
+  .nav-menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      font-size: 1.6rem;
+      color: $color-white;
+      text-decoration: none;
+    }
+    li {
+      list-style-type: none;
+    }
+  }
 }
