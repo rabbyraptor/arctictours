@@ -9,7 +9,7 @@
           </h4>
           <ul>
             <li>
-              <nuxt-link to="tours/ice-sheet"> Ice Sheet Tour </nuxt-link>
+              <nuxt-link to="/tours/ice-sheet"> Ice Sheet Tour </nuxt-link>
             </li>
             <li>
               <nuxt-link to="tours/wildlife"> Wildlife Tour </nuxt-link>
