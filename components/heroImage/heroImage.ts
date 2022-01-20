@@ -3,5 +3,5 @@ import { Component, Vue } from 'vue-property-decorator'
 
 @Component
 export default class HeroImage extends Vue {
-    @Prop() readonly data!: HeroImage | undefined
+    @Prop() readonly data!: IHeroImage
 }
