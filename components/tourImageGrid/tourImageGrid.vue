@@ -3,25 +3,25 @@
     <div class="col-md-6 no-gutters">
       <div
         class="tour-grid__image"
-        :style="'background-image: url( ' + data.image1 + ')'"
+        :style="'background-image: url( ' + data.image1.fields.file.url + ')'"
       />
       <div
         class="tour-grid__image"
-        :style="'background-image: url( ' + data.image2 + ')'"
+        :style="'background-image: url( ' + data.image2.fields.file.url + ')'"
       />
       <div
         class="tour-grid__image"
-        :style="'background-image: url( ' + data.image3 + ')'"
+        :style="'background-image: url( ' + data.image3.fields.file.url + ')'"
       />
     </div>
     <div class="col-md-6 no-gutters">
       <div
         class="tour-grid__image"
-        :style="'background-image: url( ' + data.image4 + ')'"
+        :style="'background-image: url( ' + data.image4.fields.file.url + ')'"
       />
       <div
         class="tour-grid__image"
-        :style="'background-image: url( ' + data.image5 + ')'"
+        :style="'background-image: url( ' + data.image5.fields.file.url + ')'"
       />
     </div>
   </div>
