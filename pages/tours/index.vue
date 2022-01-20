@@ -12,7 +12,7 @@
             </p>
             <CtaButton
               :data="{
-                linkDestination: '/' + tour.fields.slug,
+                linkDestination: '/tours/' + tour.fields.slug,
                 text: 'Go to tour',
               }"
               class="mt-4"
