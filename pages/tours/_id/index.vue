@@ -1,23 +1,29 @@
 <template>
-  <div v-if="data !== null" class="main-grid">
-    <HeroImage :data="data.hero" />
+  <div v-if="data != null" class="main-grid">
+    <HeroImage :data="data.heroImage.fields" />
     <div class="container">
       <div class="row">
         <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
           <div class="split-block__text">
             <h2>
-              {{ data.tourInfo.title }}
+              {{ data.tourInfo.fields.title }}
             </h2>
-            <p v-html="data.tourInfo.text" />
+            <p v-for="p in data.tourInfo.fields.text.content">
+              {{ p.content[0].value }}
+            </p>
           </div>
         </div>
         <div
           class="col-lg-6 offset-lg-1 split-block__image"
-          style="background-image: url('/images/ice-sheet/ice-sheet-8.jpg')"
+          :style="
+            'background-image: url(' +
+            data.tourInfo.fields.image.fields.file.url +
+            ')'
+          "
         />
       </div>
-      <TourImageGrid :data="data.tourImages" />
-      <TourInfoBox :data="data.infoBox" />
+      <TourImageGrid :data="data.tourImages.fields" />
+      <TourInfoBox :data="data.infoBox.fields" />
     </div>
     <ContactCta />
   </div>
