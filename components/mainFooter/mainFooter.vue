@@ -12,7 +12,7 @@
               <nuxt-link to="/tours/ice-sheet"> Ice Sheet Tour </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="tours/wildlife"> Wildlife Tour </nuxt-link>
+              <nuxt-link to="/tours/wildlife"> Wildlife Tour </nuxt-link>
             </li>
             <li>
               <nuxt-link to="#"> Dog Sledding </nuxt-link>
@@ -22,10 +22,10 @@
             </li>
           </ul>
           <h4>
-            <nuxt-link to="about"> ABOUT </nuxt-link>
+            <nuxt-link to="/about"> ABOUT </nuxt-link>
           </h4>
           <h4>
-            <nuxt-link to="contact"> CONTACT </nuxt-link>
+            <nuxt-link to="/contact"> CONTACT </nuxt-link>
           </h4>
         </div>
         <div class="col-lg-4 offset-lg-2">
