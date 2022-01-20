@@ -1,7 +1,7 @@
 <template>
-  <button class="cta-button">
+  <nuxt-link :to="{ path: data.linkDestination }" class="cta-button">
     {{ data.text }}
-  </button>
+  </nuxt-link>
 </template>
 
 <script src="./ctaButton.ts"></script>
