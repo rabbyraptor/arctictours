@@ -1,11 +1,13 @@
 <template>
   <div class="main-grid">
-    <HeroImage :data="data.hero" />
-    <div class="container fp-ice-sheet-image d-flex align-items-center">
+    <HeroImage :data="data.heroImage.fields" />
+    <div
+      class="container fp-ice-sheet-image d-flex align-items-center"
+      :style="'background-image: url(' + data.introImage.fields.file.url + ')'"
+    >
       <div class="row">
         <h2 class="col-lg-10 offset-lg-1">
-          With the mouth of the fjord sitting on the far western horizon and the
-          ice cap knocking at the door, all roads lead to the backcountry.
+          {{ data.introImageText }}
         </h2>
       </div>
     </div>
@@ -19,6 +21,13 @@
               it one of the best places to see the northern lights which are
               visible between October and April.
             </p>
+            <CtaButton
+              class="mt-4"
+              :data="{
+                text: 'See details',
+                linkDestination: 'tours',
+              }"
+            />
           </div>
         </div>
         <div
@@ -41,6 +50,13 @@
               true wonder of the world. Kangerlussuaq offers easy access to the
               Greenland Ice Cap, via a 25 km dirt road.
             </p>
+            <CtaButton
+              class="mt-4"
+              :data="{
+                text: 'See details',
+                linkDestination: 'tours/ice-sheet',
+              }"
+            />
           </div>
         </div>
       </div>
@@ -52,9 +68,17 @@
               Surround yourself by muskoxen and caribou with outstanding
               opportunity for amazing pictures of the Arctic wildlife.
             </p>
+            <CtaButton
+              class="mt-4"
+              :data="{
+                text: 'See details',
+                linkDestination: 'tours/wildlife',
+              }"
+            />
           </div>
         </div>
-        <div
+        <nuxt-link
+          to="/tours/wildlife"
           class="col-lg-6 offset-lg-1 teaser-block__image"
           style="background-image: url('/images/wildlife/muskox-1.jpg')"
         />
