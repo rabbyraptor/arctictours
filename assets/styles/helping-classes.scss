@@ -1,6 +1,5 @@
 .fp-ice-sheet-image {
   height: 72rem;
-  background-image: url("/images/ice-sheet/ice-sheet-1.jpg");
   background-size: cover;
   background-position: bottom;
   cursor: default;
@@ -64,5 +63,18 @@
     background-size: cover;
     background-position: center;
     aspect-ratio: 1/1;
+  }
+  &__preview-grid {
+    display: grid;
+    row-gap: 0;
+    column-gap: 0;
+  }
+}
+
+.tour-wrapper {
+  border-bottom: 1px solid $black;
+
+  &:last-of-type {
+    border-bottom: none;
   }
 }
