@@ -23,6 +23,21 @@ h6,
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: $font-weight-black;
+  color: $color-red;
+}
+
+// Font sizes
+h1 {
+  font-size: $font-size-h1;
+}
+h2 {
+  font-size: $font-size-h2;
+}
+h3 {
+  font-size: $font-size-h3;
+}
+p {
+  font-size: $font-size-p;
 }
 
 main {
