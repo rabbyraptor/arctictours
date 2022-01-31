@@ -1,14 +1,6 @@
 <template>
   <div class="main-grid">
-    <HeroImage :data="data.hero" />
-    <div class="container fp-ice-sheet-image d-flex align-items-center">
-      <div class="row">
-        <h2 class="col-lg-10 offset-lg-1">
-          With the mouth of the fjord sitting on the far western horizon and the
-          ice cap knocking at the door, all roads lead to the backcountry.
-        </h2>
-      </div>
-    </div>
+    <HeroImage :data="data.heroImage.fields" />
     <div class="container">
       <div class="row teaser-block">
         <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
@@ -58,6 +50,16 @@
           class="col-lg-6 offset-lg-1 teaser-block__image"
           style="background-image: url('/images/wildlife/muskox-1.jpg')"
         />
+      </div>
+    </div>
+    <div
+      class="container fp-ice-sheet-image d-flex align-items-center"
+      :style="'background-image: url(' + data.introImage.fields.file.url + ')'"
+    >
+      <div class="row">
+        <h2 class="col-lg-10 offset-lg-1">
+          {{ data.introImageText }}
+        </h2>
       </div>
     </div>
     <ContactCta />
