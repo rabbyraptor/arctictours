@@ -1,8 +1,8 @@
 // Colors
 $color-white: #fff;
-$color-black: #000;
-$color-red: #ea6f6f;
-$color-yellow: #ffe074;
+$color-black: #202020;
+$color-red: #e45a5a;
+$color-yellow: #fdd850;
 $color-icesheet-blue: #bbf3ff;
 
 // Font weights
@@ -12,3 +12,9 @@ $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 $font-weight-black: 900;
+
+// Font sizes
+$font-size-h1: clamp(3rem, 4vw, 5rem);
+$font-size-h2: clamp(2.4rem, 4vw, 3.2rem);
+$font-size-h3: clamp(2rem, 4vw, 2.5rem);
+$font-size-p: clamp(1.4rem, 4vw, 1.8rem);
