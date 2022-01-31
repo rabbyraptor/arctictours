@@ -1,9 +1,9 @@
-import { Vue, Component } from "nuxt-property-decorator";
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
-	components:{
-	},
+
 })
+
 export default class Default extends Vue {
 
 }

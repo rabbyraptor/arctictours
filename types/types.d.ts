@@ -1,12 +1,12 @@
-interface CtaButton {
-    link: string;
+interface ICtaButton {
+    linkDestination: string;
     text: string;
 }
 
-interface HeroImage {
+interface IHeroImage {
     image: string;
     text?: string;
-    cta?: CtaButton;
+    cta?: ICtaButton;
 }
 
 interface TourInfo {
@@ -36,17 +36,17 @@ interface InfoBoxPrice {
 }
 
 interface InfoBox {
-    image: string;
+    image: any;
     title: string;
     text: InfoBoxText;
     price: InfoBoxPrice;
-    cta: CtaButton;
+    cta: ICtaButton;
 }
 
 interface TourDetails {
-    hero: HeroImage | undefined;
-    name: string | undefined;
-    tourInfo: TourInfo | undefined;
+    heroImage: IHeroImage;
+    name: string;
+    tourInfo: TourInfo;
     tourImages: TourImageGrid;
     infoBox: InfoBox;
 }

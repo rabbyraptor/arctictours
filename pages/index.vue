@@ -11,6 +11,13 @@
               it one of the best places to see the northern lights which are
               visible between October and April.
             </p>
+            <CtaButton
+              class="mt-4"
+              :data="{
+                text: 'See details',
+                linkDestination: 'tours',
+              }"
+            />
           </div>
         </div>
         <div
@@ -33,6 +40,13 @@
               true wonder of the world. Kangerlussuaq offers easy access to the
               Greenland Ice Cap, via a 25 km dirt road.
             </p>
+            <CtaButton
+              class="mt-4"
+              :data="{
+                text: 'See details',
+                linkDestination: 'tours/ice-sheet',
+              }"
+            />
           </div>
         </div>
       </div>
@@ -44,9 +58,17 @@
               Surround yourself by muskoxen and caribou with outstanding
               opportunity for amazing pictures of the Arctic wildlife.
             </p>
+            <CtaButton
+              class="mt-4"
+              :data="{
+                text: 'See details',
+                linkDestination: 'tours/wildlife',
+              }"
+            />
           </div>
         </div>
-        <div
+        <nuxt-link
+          to="/tours/wildlife"
           class="col-lg-6 offset-lg-1 teaser-block__image"
           style="background-image: url('/images/wildlife/muskox-1.jpg')"
         />

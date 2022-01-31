@@ -15,7 +15,7 @@
           /></span>
         </h1>
         <div class="hero__cta">
-          <CtaButton :data="data.cta" />
+          <CtaButton :data="data.ctaButton.fields" />
         </div>
       </div>
     </div>
