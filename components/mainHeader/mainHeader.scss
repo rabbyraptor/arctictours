@@ -4,9 +4,9 @@ header {
   position: fixed;
   width: 100%;
   z-index: 999;
+  box-shadow: 0px 1px 2px #20202090;
 
   .logo {
-    height: 40px;
     color: $color-white;
     font-size: $font-size-h2;
     font-weight: $font-weight-bold;
@@ -18,12 +18,21 @@ header {
     align-items: center;
     justify-content: space-between;
     a {
-      font-size: 1.6rem;
+      font-size: $font-size-h4;
       color: $color-white;
       text-decoration: none;
     }
     li {
       list-style-type: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $media-query-mobile) {
+  header {
+    height: 5.2rem;
+    .logo {
+      font-size: $font-size-h3;
     }
   }
 }

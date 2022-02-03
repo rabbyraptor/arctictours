@@ -17,12 +17,13 @@ footer {
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: $font-size-h3;
   }
 
   h4 {
-    font-size: 1.7rem;
+    font-size: $font-size-h4;
     margin-top: 1.2rem;
+    text-transform: capitalize;
   }
 
   ul {
@@ -31,7 +32,7 @@ footer {
 
   li,
   p {
-    font-size: 1.5rem;
+    font-size: $font-size-p;
   }
 
   a {
@@ -56,5 +57,17 @@ footer {
   margin-top: 6rem;
   background-color: $color-black;
   color: $color-white;
-  font-size: 1.2rem;
+  font-size: $font-size-p;
+}
+
+@media only screen and (max-width: $media-query-mobile) {
+  .footer {
+    padding: 2rem 0;
+    .row {
+      --bs-gutter-x: 0;
+    }
+    .row div {
+      margin-top: 3rem;
+    }
+  }
 }
