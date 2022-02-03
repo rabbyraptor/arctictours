@@ -7,7 +7,7 @@
             <span>&#x2715</span>
           </div>
         </div>
-        <NavMenu @close-menu="closeMenu" />
+        <NavMenu @close-menu="isOpen = !isOpen" />
       </div>
     </div>
     <div class="bm-menu-button" @click="isOpen = !isOpen">
