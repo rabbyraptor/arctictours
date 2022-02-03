@@ -1,19 +1,19 @@
 .infobox {
   &__text {
     h2 {
-      font-size: 3.2rem;
+      font-size: $font-size-h2;
       margin-bottom: 1.3rem;
     }
 
     h3 {
-      font-size: 1.8rem;
+      font-size: $font-size-h4;
       font-weight: $font-weight-bold;
       text-transform: initial;
       margin-top: 2rem;
     }
     li,
     p {
-      font-size: 1.8rem;
+      font-size: $font-size-p;
       font-weight: $font-weight-regular;
       line-height: 1.3;
       letter-spacing: 0.5px;
@@ -31,5 +31,14 @@
     background-size: cover;
     background-position: center;
     aspect-ratio: 1/1;
+  }
+}
+
+@media only screen and (max-width: $media-query-mobile) {
+  .infobox {
+    &__overview {
+      border: none;
+      padding: 3rem 3rem 4rem;
+    }
   }
 }

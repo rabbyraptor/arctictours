@@ -3,6 +3,8 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   &__text {
     margin-top: 4rem;
@@ -12,10 +14,13 @@
   }
 
   &__cta {
-    position: absolute;
-    bottom: 6rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    .cta-button {
+      align-self: flex-end;
+      margin-bottom: 6rem;
+    }
   }
 }
 

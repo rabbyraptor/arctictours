@@ -2,7 +2,7 @@
   <div v-if="data != null" class="main-grid">
     <HeroImage :data="data.heroImage.fields" />
     <div class="container">
-      <div class="row">
+      <div class="row tour-intro">
         <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
           <div class="split-block__text">
             <h2>

@@ -23,3 +23,13 @@
     }
   }
 }
+
+@media only screen and (max-width: $media-query-mobile) {
+  .tour-grid {
+    & :last-child > div,
+    & :first-child > div {
+      height: 20rem;
+      aspect-ratio: initial;
+    }
+  }
+}

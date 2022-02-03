@@ -73,6 +73,7 @@
   }
 }
 
+// Tours overview page
 .tour-wrapper {
   border-bottom: 1px solid $color-black;
 
@@ -83,7 +84,7 @@
 
 // Mobile
 @media only screen and (max-width: $media-query-mobile) {
-  //Fontr page tour teaser blocks
+  //Front page tour teaser blocks
   .teaser-block {
     display: grid;
     height: initial;
@@ -102,6 +103,16 @@
   //Front page ice sheet image
   .fp-ice-sheet-image {
     height: 50rem;
+  }
+
+  // Tour page
+  .tour-intro {
+    display: grid;
+    .split-block {
+      &__image {
+        grid-row: 1;
+      }
+    }
   }
 
   // Tours page block
