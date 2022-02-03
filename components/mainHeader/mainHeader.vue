@@ -6,19 +6,13 @@
           Arctic Tours
         </nuxt-link>
         <div
-          class="col-xl-2 col-lg-4 col-7 offset-xl-6 d-flex align-items-center"
+          class="col-xl-2 col-lg-4 col-7 offset-xl-6 d-flex align-items-center justify-content-end"
         >
-          <ul class="nav-menu">
-            <li>
-              <nuxt-link to="/tours"> Tours </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/about"> About </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/contact"> Contact </nuxt-link>
-            </li>
-          </ul>
+          <NavMenu class="desktop-nav-menu" />
+
+          <BurgerMenu>
+            <NavMenu />
+          </BurgerMenu>
         </div>
       </div>
     </div>

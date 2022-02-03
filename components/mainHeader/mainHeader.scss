@@ -26,6 +26,10 @@ header {
       list-style-type: none;
     }
   }
+
+  .bm-wrapper {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: $media-query-mobile) {
@@ -34,10 +38,19 @@ header {
     .logo {
       font-size: $font-size-h3;
     }
-    .nav-menu {
+    .desktop-nav-menu {
+      display: none;
+    }
+    .bm-wrapper {
+      display: flex;
+    }
+    .mobile-nav-menu {
       a {
         font-size: $font-size-h4;
       }
+    }
+    .bm-burger-button {
+      display: block;
     }
   }
 }

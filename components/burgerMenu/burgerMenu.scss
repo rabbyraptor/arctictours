@@ -1,0 +1,65 @@
+.bm {
+  .bm-wrapper {
+    &.hidden {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(0vw);
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.2s;
+    .bm-menu {
+      position: absolute;
+      width: 70%;
+      height: 100%;
+      top: 0;
+      left: 30%;
+      background-color: $color-red;
+      box-shadow: -1px 0px 3px #20202066;
+
+      &__header {
+        position: absolute;
+        top: 0.5rem;
+        right: 1.5rem;
+        .close-button {
+          font-size: $font-size-h2;
+          line-height: 1;
+          color: $color-white;
+          padding: 1rem;
+          cursor: pointer;
+        }
+      }
+
+      .nav-menu {
+        flex-direction: column;
+        a {
+          font-size: $font-size-h1;
+          line-height: 6rem;
+        }
+      }
+    }
+  }
+  .bm-menu-button {
+    top: 1.2rem;
+    right: 2.2rem;
+    height: 2.6rem;
+    width: 4rem;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.4rem;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 10%;
+      width: 100%;
+      background-color: $color-white;
+      border-radius: 0px;
+    }
+  }
+}
