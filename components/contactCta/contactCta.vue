@@ -2,7 +2,11 @@
   <div class="container">
     <div class="row">
       <div
-        style="background-image: url('/images/kangerlussuaq-1.jpg')"
+        :style="
+          'background-image: url(' +
+          data.image.fields.file.url +
+          '?fl=progressive)'
+        "
         class="contact-cta"
       >
         <h1 class="col-lg-10 offset-lg-1 contact-cta__text">
@@ -10,7 +14,7 @@
           We have got answers.
         </h1>
         <div class="contact-cta__cta d-flex justify-content-center">
-          <CtaButton :data="data.cta" />
+          <CtaButton :data="data.cta.fields" />
         </div>
       </div>
     </div>
