@@ -43,6 +43,12 @@ interface InfoBox {
     cta: ICtaButton;
 }
 
+interface ContactCta {
+    image: any;
+    text: string;
+    cta: ICtaButton;
+}
+
 interface TourDetails {
     heroImage: IHeroImage;
     name: string;
