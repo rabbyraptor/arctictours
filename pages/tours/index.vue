@@ -1,7 +1,11 @@
 <template>
   <div class="main-grid">
     <div class="container">
-      <div v-for="tour in tours" class="row tour-wrapper">
+      <div
+        v-for="tour in tours"
+        :key="tour.fields.slug"
+        class="row tour-wrapper"
+      >
         <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
           <div class="split-block__text">
             <h2>
@@ -23,6 +27,7 @@
           <div class="row">
             <div
               v-for="image in tour.fields.previewImages.fields.images"
+              :key="image.key"
               class="col-6 split-block__image"
               :style="'background-image: url(' + image.fields.file.url + ')'"
             />
@@ -30,6 +35,7 @@
         </div>
       </div>
     </div>
+    <ContactCta />
   </div>
 </template>
 
