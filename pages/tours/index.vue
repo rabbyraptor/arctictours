@@ -29,13 +29,17 @@
               v-for="image in tour.fields.previewImages.fields.images"
               :key="image.key"
               class="col-6 split-block__image"
-              :style="'background-image: url(' + image.fields.file.url + ')'"
+              :style="
+                'background-image: url(' +
+                image.fields.file.url +
+                '?fl=progressive)'
+              "
             />
           </div>
         </div>
       </div>
     </div>
-    <ContactCta />
+    <ContactCta :data="tours[0].fields.contactCta.fields" />
   </div>
 </template>
 

@@ -18,14 +18,14 @@
           :style="
             'background-image: url(' +
             data.tourInfo.fields.image.fields.file.url +
-            ')'
+            '?fl=progressive)'
           "
         />
       </div>
       <TourImageGrid :data="data.tourImages.fields" />
       <TourInfoBox :data="data.infoBox.fields" />
     </div>
-    <ContactCta />
+    <ContactCta :data="data.contactCta.fields" />
   </div>
 </template>
 

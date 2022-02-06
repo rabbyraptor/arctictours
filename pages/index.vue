@@ -23,7 +23,7 @@
           :style="
             'background-image: url(' +
             data.teaserBlock1.fields.image.fields.file.url +
-            ')'
+            '?fl=progressive)'
           "
         />
       </div>
@@ -34,7 +34,7 @@
           :style="
             'background-image: url(' +
             data.teaserBlock2.fields.image.fields.file.url +
-            ')'
+            '?fl=progressive)'
           "
         />
 
@@ -76,14 +76,18 @@
           :style="
             'background-image: url(' +
             data.teaserBlock3.fields.image.fields.file.url +
-            ')'
+            '?fl=progressive)'
           "
         />
       </div>
     </div>
     <div
       class="container fp-ice-sheet-image d-flex align-items-center"
-      :style="'background-image: url(' + data.introImage.fields.file.url + ')'"
+      :style="
+        'background-image: url(' +
+        data.introImage.fields.file.url +
+        '?fl=progressive)'
+      "
     >
       <div class="row">
         <h2 class="col-lg-10 offset-lg-1">
@@ -91,7 +95,7 @@
         </h2>
       </div>
     </div>
-    <ContactCta />
+    <ContactCta :data="data.contactCta.fields" />
   </div>
 </template>
 
