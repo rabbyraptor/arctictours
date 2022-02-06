@@ -12,7 +12,6 @@ const contentfulClient = client
         content_type: 'tourDetailPage',
         include: 10,
         order: 'sys.id'
-
       })
     ]).then(([pages]) => {
       return {
