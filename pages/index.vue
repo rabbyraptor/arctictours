@@ -13,12 +13,13 @@
               class="mt-4"
               :data="{
                 text: 'See details',
-                linkDestination: 'tours',
+                linkDestination: 'tours/dog-sledding',
               }"
             />
           </div>
         </div>
-        <div
+        <nuxt-link
+          to="/tours/dog-sledding"
           class="col-lg-6 offset-lg-1 teaser-block__image"
           :style="
             'background-image: url(' +
