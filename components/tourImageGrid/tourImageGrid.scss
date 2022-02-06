@@ -14,13 +14,7 @@
   &__image {
     background-size: cover;
     background-position: center;
-    transition: all 1.5s;
     z-index: 0;
-
-    &:hover {
-      transform: scale(1.04);
-      z-index: 1;
-    }
   }
 }
 
