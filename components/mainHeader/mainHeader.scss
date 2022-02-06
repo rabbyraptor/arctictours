@@ -27,7 +27,13 @@ header {
     }
   }
 
-  .bm-wrapper {
+  .desktop-nav-menu {
+    .bm-menu-link {
+      display: none;
+    }
+  }
+
+  .mobile-nav-menu {
     display: none;
   }
 }
@@ -45,6 +51,7 @@ header {
       display: flex;
     }
     .mobile-nav-menu {
+      display: flex;
       a {
         font-size: $font-size-h4;
       }
