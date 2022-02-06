@@ -23,7 +23,7 @@
         />
       </div>
       <TourImageGrid :data="data.tourImages.fields" />
-      <TourInfoBox :data="data.infoBox.fields" />
+      <TourInfoBox id="infobox" :data="data.infoBox.fields" />
     </div>
     <ContactCta :data="data.contactCta.fields" />
   </div>
