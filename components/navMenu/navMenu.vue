@@ -1,5 +1,8 @@
 <template>
   <ul class="nav-menu">
+    <li class="bm-menu-link" @click="closeMenu">
+      <nuxt-link to="/"> Home </nuxt-link>
+    </li>
     <li @click="closeMenu">
       <nuxt-link to="/tours"> Tours </nuxt-link>
     </li>
