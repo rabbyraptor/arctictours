@@ -23,7 +23,7 @@
           :style="
             'background-image: url(' +
             data.teaserBlock1.fields.image.fields.file.url +
-            '?fl=progressive)'
+            '?fm=webp)'
           "
         />
       </div>
@@ -34,7 +34,7 @@
           :style="
             'background-image: url(' +
             data.teaserBlock2.fields.image.fields.file.url +
-            '?fl=progressive)'
+            '?fm=webp)'
           "
         />
 
@@ -76,7 +76,7 @@
           :style="
             'background-image: url(' +
             data.teaserBlock3.fields.image.fields.file.url +
-            '?fl=progressive)'
+            '?fm=webp)'
           "
         />
       </div>
@@ -84,9 +84,7 @@
     <div
       class="container fp-ice-sheet-image d-flex align-items-center"
       :style="
-        'background-image: url(' +
-        data.introImage.fields.file.url +
-        '?fl=progressive)'
+        'background-image: url(' + data.introImage.fields.file.url + '?fm=webp)'
       "
     >
       <div class="row">

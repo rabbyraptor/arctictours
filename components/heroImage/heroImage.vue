@@ -5,7 +5,7 @@
         :style="
           'background: linear-gradient(to bottom, #20202066, #20202066), url(' +
           data.image.fields.file.url +
-          '?fl=progressive) no-repeat center'
+          '?fm=webp) no-repeat center'
         "
         class="hero"
       >

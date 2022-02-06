@@ -18,7 +18,7 @@
           :style="
             'background-image: url(' +
             data.tourInfo.fields.image.fields.file.url +
-            '?fl=progressive)'
+            '?fm=webp)'
           "
         />
       </div>

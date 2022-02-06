@@ -4,25 +4,19 @@
       <div
         class="tour-grid__image"
         :style="
-          'background-image: url( ' +
-          data.image1.fields.file.url +
-          '?fl=progressive)'
+          'background-image: url( ' + data.image1.fields.file.url + '?fm=webp)'
         "
       />
       <div
         class="tour-grid__image"
         :style="
-          'background-image: url( ' +
-          data.image2.fields.file.url +
-          '?fl=progressive)'
+          'background-image: url( ' + data.image2.fields.file.url + '?fm=webp)'
         "
       />
       <div
         class="tour-grid__image"
         :style="
-          'background-image: url( ' +
-          data.image3.fields.file.url +
-          '?fl=progressive)'
+          'background-image: url( ' + data.image3.fields.file.url + '?fm=webp)'
         "
       />
     </div>
@@ -30,17 +24,13 @@
       <div
         class="tour-grid__image"
         :style="
-          'background-image: url( ' +
-          data.image4.fields.file.url +
-          '?fl=progressive)'
+          'background-image: url( ' + data.image4.fields.file.url + '?fm=webp)'
         "
       />
       <div
         class="tour-grid__image"
         :style="
-          'background-image: url( ' +
-          data.image5.fields.file.url +
-          '?fl=progressive)'
+          'background-image: url( ' + data.image5.fields.file.url + '?fm=webp)'
         "
       />
     </div>

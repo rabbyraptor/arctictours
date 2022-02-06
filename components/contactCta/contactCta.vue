@@ -3,9 +3,7 @@
     <div class="row">
       <div
         :style="
-          'background-image: url(' +
-          data.image.fields.file.url +
-          '?fl=progressive)'
+          'background-image: url(' + data.image.fields.file.url + '?fm=webp)'
         "
         class="contact-cta"
       >

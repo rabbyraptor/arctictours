@@ -30,9 +30,7 @@
               :key="image.key"
               class="col-6 split-block__image"
               :style="
-                'background-image: url(' +
-                image.fields.file.url +
-                '?fl=progressive)'
+                'background-image: url(' + image.fields.file.url + '?fm=webp)'
               "
             />
           </div>
