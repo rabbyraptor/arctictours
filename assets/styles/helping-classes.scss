@@ -74,6 +74,23 @@
   }
 }
 
+// Contact page
+.contact-form {
+  padding-bottom: 3rem;
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: $font-size-p;
+  }
+  textarea {
+    padding: 0.2rem;
+  }
+  h4 {
+    margin-top: 1.5rem;
+  }
+}
+
 // Mobile
 @media only screen and (max-width: $media-query-mobile) {
   //Front page tour teaser blocks
