@@ -7,7 +7,6 @@ const client = contentful.createClient({
 const contentfulClient = client
 
 @Component({
-
   async asyncData({ route }) {
     return Promise.all([
       await contentfulClient.getEntries({
