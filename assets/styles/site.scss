@@ -48,6 +48,17 @@ main {
   padding-top: 7rem;
 }
 
+// Page transitions
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
 @media only screen and (max-width: $media-query-mobile) {
   main {
     padding-top: 5.2rem;
