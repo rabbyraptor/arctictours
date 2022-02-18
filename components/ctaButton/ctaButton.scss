@@ -2,9 +2,9 @@
   display: block;
   padding: 0.8rem 3rem;
   font-size: $font-size-h3;
-  border: 2px solid $color-red;
-  color: $color-red;
-  background-color: $color-white;
+  border: 2px solid transparent;
+  color: $color-white;
+  background-color: $color-red;
   font-family: "Roboto", sans-serif;
   border-radius: 3px;
   cursor: pointer;
@@ -12,13 +12,16 @@
   background-position: 0 0;
   text-align: center;
   max-width: 26rem;
+  box-shadow: 1px 1px 4px -1px #202020;
 
   &:hover {
     transform: scale(1.04);
     box-shadow: 2px 2px 2px rgba($color-black, 0.1);
     background-position: 0 100%;
-    color: $color-white;
-    background-color: $color-red;
+    color: $color-red;
+    background-color: $color-white;
+    border-color: $color-red;
+    box-shadow: 1px 1px 4px 1px #20202050;
   }
 }
 
