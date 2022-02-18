@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <div class="row p-4">
+      <div class="row py-4">
         <nuxt-link to="/" class="col-xl-3 col-lg-8 col-5 offset-xl-1 logo">
           Arctic Tours
         </nuxt-link>
