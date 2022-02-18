@@ -10,7 +10,6 @@
               {{ data.teaserBlock1.fields.text }}
             </p>
             <CtaButton
-              class="mt-4"
               :data="{
                 text: 'See details',
                 linkDestination: 'tours/dog-sledding',
@@ -46,7 +45,6 @@
               {{ data.teaserBlock2.fields.text }}
             </p>
             <CtaButton
-              class="mt-4"
               :data="{
                 text: 'See details',
                 linkDestination: 'tours/ice-sheet',
@@ -63,7 +61,6 @@
               {{ data.teaserBlock3.fields.text }}
             </p>
             <CtaButton
-              class="mt-4"
               :data="{
                 text: 'See details',
                 linkDestination: 'tours/wildlife',
