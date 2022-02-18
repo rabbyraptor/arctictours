@@ -1,6 +1,6 @@
 <template>
   <div v-if="data != null" class="main-grid">
-    <div class="container">
+    <div class="container about-wrapper">
       <div class="row tour-intro">
         <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
           <div class="split-block__text">
