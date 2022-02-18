@@ -1,6 +1,6 @@
 <template>
   <div class="main-grid">
-    <div class="container">
+    <div class="container tours-list">
       <div
         v-for="tour in tours"
         :key="tour.fields.slug"
@@ -19,7 +19,6 @@
                 linkDestination: '/tours/' + tour.fields.slug,
                 text: 'Go to tour',
               }"
-              class="mt-4"
             />
           </div>
         </div>
