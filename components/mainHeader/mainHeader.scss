@@ -19,6 +19,8 @@ header {
     justify-content: space-between;
     a {
       font-size: $font-size-p;
+      font-weight: $font-weight-medium;
+      letter-spacing: 0.5px;
       color: $color-white;
       text-decoration: none;
       text-decoration: underline;
