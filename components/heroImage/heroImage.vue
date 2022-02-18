@@ -3,7 +3,7 @@
     <div class="row">
       <div
         :style="
-          'background: linear-gradient(to bottom, #20202066, #20202066), url(' +
+          'background: linear-gradient(to bottom, #20202060, #20202000, #20202000), url(' +
           data.image.fields.file.url +
           '?fm=webp) no-repeat center'
         "
