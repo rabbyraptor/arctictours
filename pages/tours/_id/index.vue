@@ -3,7 +3,11 @@
     <HeroImage :data="data.heroImage.fields" />
     <div class="container">
       <div class="row tour-intro">
-        <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
+        <div
+          class="col-lg-4 offset-lg-1 d-flex align-items-center"
+          data-aos="fade"
+          data-aos-delay="100"
+        >
           <div class="split-block__text">
             <h2>
               {{ data.tourInfo.fields.title }}

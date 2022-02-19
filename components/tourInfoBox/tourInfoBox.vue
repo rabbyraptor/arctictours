@@ -2,10 +2,12 @@
   <div class="row infobox">
     <div
       class="col-lg-6 infobox__image"
-      :style="'background-image: url(' + data.image.fields.file.url + '?fm=webp)'"
+      :style="
+        'background-image: url(' + data.image.fields.file.url + '?fm=webp)'
+      "
     />
     <div class="col-lg-5 d-flex align-items-center infobox__overview">
-      <div class="infobox__text">
+      <div class="infobox__text" data-aos="fade" data-aos-delay="100">
         <h2>
           {{ data.title }}
         </h2>

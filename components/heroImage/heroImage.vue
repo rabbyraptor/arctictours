@@ -9,12 +9,16 @@
         "
         class="hero"
       >
-        <h1 class="col-lg-10 offset-lg-1 hero__text">
+        <h1
+          class="col-lg-10 offset-lg-1 hero__text"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <span v-for="(p, index) in data.text.content"
             >{{ p.content[0].value }}<br
           /></span>
         </h1>
-        <div class="hero__cta">
+        <div class="hero__cta" data-aos="fade-down" data-aos-delay="100">
           <CtaButton :data="data.ctaButton.fields" />
         </div>
       </div>

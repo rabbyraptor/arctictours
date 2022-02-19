@@ -7,11 +7,19 @@
         "
         class="contact-cta"
       >
-        <h1 class="col-lg-10 offset-lg-1 contact-cta__text">
+        <h1
+          class="col-lg-10 offset-lg-1 contact-cta__text"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
           Questions? <br />
           We have got answers.
         </h1>
-        <div class="contact-cta__cta d-flex justify-content-center">
+        <div
+          class="contact-cta__cta d-flex justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <CtaButton :data="data.cta.fields" />
         </div>
       </div>

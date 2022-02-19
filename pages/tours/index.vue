@@ -6,7 +6,11 @@
         :key="tour.fields.slug"
         class="row tour-wrapper"
       >
-        <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
+        <div
+          class="col-lg-4 offset-lg-1 d-flex align-items-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <div class="split-block__text">
             <h2>
               {{ tour.fields.name }}
@@ -22,7 +26,11 @@
             />
           </div>
         </div>
-        <div class="col-lg-6 offset-lg-1 split-block__preview-grid">
+        <div
+          class="col-lg-6 offset-lg-1 split-block__preview-grid"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <div class="row">
             <div
               v-for="image in tour.fields.previewImages.fields.images"

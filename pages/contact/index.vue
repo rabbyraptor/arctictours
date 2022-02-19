@@ -4,7 +4,11 @@
       <div class="row tour-intro py-5">
         <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
           <div class="row">
-            <div class="split-block__text">
+            <div
+              class="split-block__text"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <h2>
                 {{ data.title }}
               </h2>
@@ -12,7 +16,11 @@
                 <span v-html="p.content[0].value" />
               </p>
             </div>
-            <div class="contact-form py-5">
+            <div
+              class="contact-form py-5"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <h3>Write a message</h3>
               <form>
                 <label for="name">
@@ -37,7 +45,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 offset-lg-1">
+        <div
+          class="col-lg-6 offset-lg-1"
+          data-aos="fade-left"
+          data-aos-delay="400"
+        >
           <div class="row">
             <div
               class="split-block__image"

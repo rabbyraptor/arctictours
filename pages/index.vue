@@ -3,7 +3,11 @@
     <HeroImage :data="data.heroImage.fields" />
     <div class="container">
       <div class="row teaser-block">
-        <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
+        <div
+          class="col-lg-4 offset-lg-1 d-flex align-items-center"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <div class="teaser-block__text">
             <h2>{{ data.teaserBlock1.fields.title }}</h2>
             <p>
@@ -25,6 +29,8 @@
             data.teaserBlock1.fields.image.fields.file.url +
             '?fm=webp)'
           "
+          data-aos="fade-left"
+          data-aos-delay="100"
         />
       </div>
       <div class="row teaser-block">
@@ -36,9 +42,15 @@
             data.teaserBlock2.fields.image.fields.file.url +
             '?fm=webp)'
           "
+          data-aos="fade-right"
+          data-aos-delay="100"
         />
 
-        <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
+        <div
+          class="col-lg-4 offset-lg-1 d-flex align-items-center"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
           <div class="teaser-block__text">
             <h2>{{ data.teaserBlock2.fields.title }}</h2>
             <p>
@@ -54,7 +66,11 @@
         </div>
       </div>
       <div class="row teaser-block">
-        <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
+        <div
+          class="col-lg-4 offset-lg-1 d-flex align-items-center"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <div class="teaser-block__text">
             <h2>{{ data.teaserBlock3.fields.title }}</h2>
             <p>
@@ -76,6 +92,8 @@
             data.teaserBlock3.fields.image.fields.file.url +
             '?fm=webp)'
           "
+          data-aos="fade-left"
+          data-aos-delay="100"
         />
       </div>
     </div>
@@ -85,7 +103,7 @@
         'background-image: url(' + data.introImage.fields.file.url + '?fm=webp)'
       "
     >
-      <div class="row">
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
         <h2 class="col-lg-10 offset-lg-1">
           {{ data.introImageText }}
         </h2>
