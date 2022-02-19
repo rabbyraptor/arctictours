@@ -7,7 +7,7 @@
       "
     />
     <div class="col-lg-5 d-flex align-items-center infobox__overview">
-      <div class="infobox__text" data-aos="fade" data-aos-delay="100">
+      <div class="infobox__text" data-aos="fade">
         <h2>
           {{ data.title }}
         </h2>

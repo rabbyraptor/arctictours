@@ -6,7 +6,6 @@
         <div
           class="col-lg-4 offset-lg-1 d-flex align-items-center"
           data-aos="fade-right"
-          data-aos-delay="100"
         >
           <div class="teaser-block__text">
             <h2>{{ data.teaserBlock1.fields.title }}</h2>
@@ -30,7 +29,6 @@
             '?fm=webp)'
           "
           data-aos="fade-left"
-          data-aos-delay="100"
         />
       </div>
       <div class="row teaser-block">
@@ -43,13 +41,11 @@
             '?fm=webp)'
           "
           data-aos="fade-right"
-          data-aos-delay="100"
         />
 
         <div
           class="col-lg-4 offset-lg-1 d-flex align-items-center"
           data-aos="fade-left"
-          data-aos-delay="100"
         >
           <div class="teaser-block__text">
             <h2>{{ data.teaserBlock2.fields.title }}</h2>
@@ -69,7 +65,6 @@
         <div
           class="col-lg-4 offset-lg-1 d-flex align-items-center"
           data-aos="fade-right"
-          data-aos-delay="100"
         >
           <div class="teaser-block__text">
             <h2>{{ data.teaserBlock3.fields.title }}</h2>
@@ -93,7 +88,6 @@
             '?fm=webp)'
           "
           data-aos="fade-left"
-          data-aos-delay="100"
         />
       </div>
     </div>
@@ -103,7 +97,7 @@
         'background-image: url(' + data.introImage.fields.file.url + '?fm=webp)'
       "
     >
-      <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="row" data-aos="fade-up">
         <h2 class="col-lg-10 offset-lg-1">
           {{ data.introImageText }}
         </h2>

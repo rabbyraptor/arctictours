@@ -4,11 +4,7 @@
       <div class="row tour-intro py-5">
         <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
           <div class="row">
-            <div
-              class="split-block__text"
-              data-aos="fade-right"
-              data-aos-delay="100"
-            >
+            <div class="split-block__text" data-aos="fade-right">
               <h2>
                 {{ data.title }}
               </h2>

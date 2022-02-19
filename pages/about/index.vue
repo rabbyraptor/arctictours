@@ -5,7 +5,6 @@
         <div
           class="col-lg-4 offset-lg-1 d-flex align-items-center"
           data-aos="fade-right"
-          data-aos-delay="100"
         >
           <div class="split-block__text">
             <h2>
@@ -19,7 +18,6 @@
         <div
           class="col-lg-6 offset-lg-1 split-block__preview-grid"
           data-aos="fade-left"
-          data-aos-delay="100"
         >
           <div class="row">
             <div
