@@ -11,5 +11,5 @@ export default ({ app }) => {
             once: true,
             delay: 100
         }) // or any other options you need
-    }, 0)
+    }, 60)
 }
