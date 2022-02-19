@@ -30,7 +30,7 @@
           </li>
         </ul>
         <h3 class="price" v-html="data.price.fields.title" />
-        <p>{{ data.price.fields.value }} {{ data.price.fields.unit }}</p>
+        <p>{{ data.price.fields.unit }}{{ data.price.fields.value }}</p>
         <CtaButton :data="data.ctaButton.fields" class="mt-4" />
       </div>
     </div>
