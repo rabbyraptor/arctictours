@@ -17,6 +17,8 @@
             <p>
               {{ tour.fields.tourInfo.fields.text.content[0].content[0].value }}
             </p>
+            <p style="margin-bottom: 0">From</p>
+            <h3>€{{ tour.fields.infoBox.fields.price.fields.value }}</h3>
             <CtaButton
               :data="{
                 linkDestination: '/tours/' + tour.fields.slug,
