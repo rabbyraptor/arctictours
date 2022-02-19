@@ -27,7 +27,12 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '@/plugins/aos', mode: 'client' }
   ],
+
+  purgeCSS: {
+    whitelist: ['aos-init', 'aos-animate', 'data-aos-delay', 'data-aos-duration', 'fade-up', 'zoom-in']
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [{ path: '~/components', extensions: ['vue'] }],
