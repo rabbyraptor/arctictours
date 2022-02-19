@@ -1,4 +1,5 @@
 import { Component, Vue } from 'vue-property-decorator'
+import AOS from 'aos'
 
 const contentful = require('contentful')
 const client = contentful.createClient({
@@ -21,5 +22,9 @@ const contentfulClient = client
     }
 })
 export default class HomePage extends Vue {
-
+    mounted() {
+        this.$nextTick(() => {
+            setTimeout(() => AOS.refreshHard(), 500)
+        })
+    }
 }
