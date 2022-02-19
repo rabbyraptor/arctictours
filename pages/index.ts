@@ -22,9 +22,5 @@ const contentfulClient = client
     }
 })
 export default class HomePage extends Vue {
-    mounted() {
-        this.$nextTick(() => {
-            setTimeout(() => AOS.refreshHard(), 500)
-        })
-    }
+
 }
